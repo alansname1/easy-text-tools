@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Easy Text Tools | Word Counter, Case Converter & Reading Time</title>
-  <meta name="description" content="Free online text tools with word count, character count, case conversion, text cleaner, reading time estimates, and large-print accessibility mode." />
+  <meta name="description" content="Free online text tools with word count, character count, case conversion, text cleaning, reading time estimates, and simple accessibility-friendly formatting tools." />
+  <link rel="canonical" href="https://alansname1.github.io/easy-text-tools/" />
 
   <style>
     body {
@@ -14,19 +15,72 @@
       padding: 20px;
       background: #0f172a;
       color: #fff;
+      line-height: 1.6;
     }
+
+    a {
+      color: #93c5fd;
+    }
+
     textarea {
       width: 100%;
       min-height: 200px;
       margin-top: 15px;
-      padding: 10px;
+      padding: 12px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      border: 1px solid #475569;
+      font-size: 16px;
     }
+
     .button {
       padding: 10px 15px;
-      margin: 5px;
+      margin: 5px 5px 5px 0;
       cursor: pointer;
       border-radius: 6px;
       border: none;
+      font-size: 15px;
+    }
+
+    .tool-box {
+      background: #111827;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .metrics {
+      margin-top: 15px;
+    }
+
+    .metrics p {
+      margin: 6px 0;
+    }
+
+    .section {
+      margin-top: 35px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #111827;
+      text-align: center;
+      font-size: 14px;
+      border-radius: 10px;
+    }
+
+    ul.info-links {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.info-links li {
+      display: inline-block;
+      margin: 0 10px;
     }
   </style>
 </head>
@@ -35,49 +89,112 @@
 
 <h1>Easy Text Tools</h1>
 
-<p>Use free online tools to count words, convert case, clean text, and estimate reading time.</p>
+<p><strong>Use free online text tools to count words, count characters, convert letter case, clean up pasted text, and estimate reading time.</strong> This page is designed for students, writers, job seekers, and anyone who needs a simple way to edit or check text quickly.</p>
 
-<textarea id="textInput" placeholder="Paste text here..."></textarea>
+<p>Many text tools online are cluttered or overloaded with features. This page keeps things simple and practical. Paste your text into the box below, choose the action you want, and get instant results without signing up or downloading anything.</p>
 
-<br>
+<div class="tool-box">
+  <h2>Free Text Tool</h2>
 
-<button class="button" onclick="convertCase('upper')">UPPERCASE</button>
-<button class="button" onclick="convertCase('lower')">lowercase</button>
-<button class="button" onclick="convertCase('title')">Title Case</button>
-<button class="button" onclick="cleanText()">Clean Text</button>
-<button class="button" onclick="clearText()">Clear</button>
+  <p>Paste text below to check word count, character count, convert text case, and clean spacing.</p>
 
-<p>Words: <span id="words">0</span></p>
-<p>Characters: <span id="characters">0</span></p>
+  <textarea id="textInput" placeholder="Paste text here..."></textarea>
 
-<hr>
+  <div style="margin-top: 15px;">
+    <button class="button" onclick="convertCase('upper')">UPPERCASE</button>
+    <button class="button" onclick="convertCase('lower')">lowercase</button>
+    <button class="button" onclick="convertCase('title')">Title Case</button>
+    <button class="button" onclick="cleanText()">Clean Text</button>
+    <button class="button" onclick="clearText()">Clear</button>
+  </div>
 
-<h2>How to Use These Text Tools</h2>
-<p>
-Paste your text into the box above to instantly count words, characters, and clean formatting.
-These tools are helpful for students, writers, and job seekers.
-</p>
+  <div class="metrics">
+    <p>Words: <span id="words">0</span></p>
+    <p>Characters: <span id="characters">0</span></p>
+    <p>Estimated Reading Time: <span id="readingTime">0 min</span></p>
+  </div>
+</div>
 
-<h3 style="text-align:center;">Website Information</h3>
-<ul style="list-style:none; text-align:center; padding:0;">
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="privacy-policy.html">Privacy Policy</a></li>
-<li><a href="terms.html">Terms of Use</a></li>
-</ul>
+<div class="section">
+  <h2>What These Text Tools Help You Do</h2>
 
-<p style="text-align:center; margin-top:20px;">
-<strong>More Resources:</strong><br>
-<a href="https://alansname1.github.io/">Typing Speed Test</a> |
-<a href="https://alansname1.github.io/simple-income-tools/">Simple Income Tools</a>
-</p>
+  <p>This page combines several common text tasks in one place. Instead of using separate tools, you can paste text once and quickly check length, clean formatting problems, and convert text into a more useful format.</p>
 
-<p style="text-align:center; margin-top:25px;">
-<strong>Love Rescue Dogs? 🐶</strong><br>
-<a href="https://rescue-dogs-are-awesome-1.myspreadshop.com/" target="_blank">
-Rescue Dogs Are Awesome Shop
-</a>
-</p>
+  <ul>
+    <li><strong>Word Counter:</strong> useful for essays, articles, job application responses, and social content.</li>
+    <li><strong>Character Counter:</strong> helpful for forms, short descriptions, titles, and text limits.</li>
+    <li><strong>Case Converter:</strong> quickly change text to uppercase, lowercase, or title case.</li>
+    <li><strong>Text Cleaner:</strong> removes extra spaces and makes pasted text easier to read.</li>
+    <li><strong>Reading Time Estimate:</strong> gives a rough idea of how long a piece of text will take to read.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Who Can Use These Tools?</h2>
+
+  <p>These text tools are useful for many different situations:</p>
+
+  <ul>
+    <li><strong>Students</strong> checking assignment length and cleaning copied notes</li>
+    <li><strong>Writers</strong> reviewing drafts, titles, and article length</li>
+    <li><strong>Job seekers</strong> editing resumes, cover letters, and form responses</li>
+    <li><strong>Website owners</strong> checking page text, descriptions, and readability</li>
+    <li><strong>Everyday users</strong> cleaning text before sending messages or documents</li>
+  </ul>
+
+  <p>Because the tool is simple and immediate, it works well for quick edits without any unnecessary steps.</p>
+</div>
+
+<div class="section">
+  <h2>How to Use the Tool</h2>
+
+  <ol>
+    <li>Paste your text into the box above.</li>
+    <li>Review the word count, character count, and reading time.</li>
+    <li>Choose a case conversion if needed.</li>
+    <li>Use the text cleaner to remove extra spaces.</li>
+    <li>Copy the improved text back into your document, email, or form.</li>
+  </ol>
+
+  <p>This process is useful when text has been copied from websites, PDFs, or documents that leave behind uneven spacing or inconsistent formatting.</p>
+</div>
+
+<div class="section">
+  <h2>Why Word Count and Character Count Matter</h2>
+
+  <p>Word count is important when you need to stay within a recommended length, such as essays, blog posts, assignments, or online applications. Character count matters when a platform or form limits how much text you can enter.</p>
+
+  <p>Using both together gives you a better understanding of your text. A short paragraph may still have a high character count if it contains long words, while a longer paragraph may fit a word target more naturally. This is why both measurements are useful.</p>
+</div>
+
+<div class="section">
+  <h2>Why Clean Text Before You Use It?</h2>
+
+  <p>Copied text often includes extra spaces, uneven formatting, or line breaks that make it harder to read. Cleaning text improves clarity and helps your writing look more polished. This is especially helpful for resumes, online forms, applications, and school assignments where presentation matters.</p>
+
+  <p>A simple cleanup step can make text easier to reuse and reduce small formatting errors before you submit or publish it.</p>
+</div>
+
+<div class="section">
+  <h2>More Helpful Resources</h2>
+
+  <p>If you are working on typing, writing, or online productivity, these pages may also help:</p>
+
+  <ul>
+    <li><a href="https://alansname1.github.io/">Typing Speed Test</a></li>
+    <li><a href="https://alansname1.github.io/simple-income-tools/">Simple Online Income Ideas</a></li>
+  </ul>
+</div>
+
+<footer>
+  <p>© 2026 Easy Text Tools</p>
+  <ul class="info-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms of Use</a></li>
+  </ul>
+</footer>
 
 <script>
 const textInput = document.getElementById('textInput');
@@ -85,18 +202,23 @@ const textInput = document.getElementById('textInput');
 function updateMetrics() {
   const text = textInput.value;
   const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+  const characters = text.length;
+  const readingMinutes = words > 0 ? Math.max(1, Math.ceil(words / 200)) : 0;
 
   document.getElementById('words').textContent = words;
-  document.getElementById('characters').textContent = text.length;
+  document.getElementById('characters').textContent = characters;
+  document.getElementById('readingTime').textContent = readingMinutes + (readingMinutes === 1 ? ' min' : ' mins');
 }
 
 function convertCase(type) {
   let text = textInput.value;
+
   if (type === 'upper') text = text.toUpperCase();
   if (type === 'lower') text = text.toLowerCase();
   if (type === 'title') {
     text = text.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
   }
+
   textInput.value = text;
   updateMetrics();
 }
