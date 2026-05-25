@@ -22,7 +22,303 @@ line-height:1.7;
 color:#222;
 background:#ffffff;
 }
+
 header{
 background:#0d47a1;
 color:white;
-padding:30px 24
+padding:30px 24px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:34px;
+}
+
+header p{
+max-width:760px;
+margin:12px auto 0;
+font-size:18px;
+}
+
+nav{
+background:#f4f4f4;
+padding:14px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+nav a{
+margin:0 10px;
+text-decoration:none;
+color:#0d47a1;
+font-weight:bold;
+}
+
+main{
+padding:26px;
+}
+
+section{
+margin-bottom:38px;
+}
+
+h2{
+color:#0d47a1;
+}
+
+h3{
+color:#16324f;
+}
+
+a{
+color:#0d47a1;
+}
+
+textarea{
+width:100%;
+min-height:200px;
+margin-top:15px;
+padding:12px;
+box-sizing:border-box;
+border-radius:6px;
+border:1px solid #bbb;
+font-size:16px;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+.button{
+padding:10px 15px;
+margin:5px 5px 5px 0;
+cursor:pointer;
+border-radius:5px;
+border:none;
+font-size:15px;
+background:#0d47a1;
+color:white;
+font-weight:bold;
+}
+
+.secondary-button{
+background:#eeeeee;
+color:#0d47a1;
+}
+
+.tool-box{
+background:#fafafa;
+padding:20px;
+border:1px solid #ddd;
+border-radius:6px;
+margin:20px 0 30px;
+}
+
+.metrics{
+margin-top:15px;
+background:#f8f8f8;
+border-left:4px solid #0d47a1;
+padding:14px 18px;
+}
+
+.metrics p{
+margin:6px 0;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:16px;
+}
+
+.card{
+border:1px solid #ddd;
+background:#fafafa;
+padding:18px;
+border-radius:6px;
+}
+
+.box{
+background:#f8f8f8;
+border-left:4px solid #0d47a1;
+padding:18px;
+margin:18px 0;
+}
+
+footer{
+margin-top:40px;
+padding:25px;
+background:#f1f1f1;
+text-align:center;
+font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Easy Text Tools</h1>
+<p>Count words, count characters, convert text case, clean pasted text, and estimate reading time with simple online writing tools.</p>
+</header>
+
+<nav>
+<a href="/easy-text-tools/">Home</a>
+<a href="/easy-text-tools/about.html">About</a>
+<a href="/easy-text-tools/contact.html">Contact</a>
+<a href="/easy-text-tools/privacy-policy.html">Privacy Policy</a>
+<a href="/easy-text-tools/terms.html">Terms</a>
+<a href="/easy-text-tools/sitemap.xml">Sitemap</a>
+</nav>
+
+<main>
+
+<section>
+<h2>Simple Online Text Tools</h2>
+
+<p>
+Easy Text Tools helps students, writers, job seekers, website owners, and everyday users work with text more easily.
+</p>
+
+<div class="box">
+<strong>Tip:</strong> Paste text below to count words, clean spacing, and improve formatting.
+</div>
+</section>
+
+<section>
+<h2>Start Using the Text Tool</h2>
+
+<div class="tool-box">
+
+<textarea id="textInput" placeholder="Paste text here..."></textarea>
+
+<div style="margin-top:15px;">
+<button type="button" class="button" onclick="convertCase('upper')">UPPERCASE</button>
+<button type="button" class="button" onclick="convertCase('lower')">lowercase</button>
+<button type="button" class="button" onclick="convertCase('title')">Title Case</button>
+<button type="button" class="button" onclick="cleanText()">Clean Text</button>
+<button type="button" class="button secondary-button" onclick="clearText()">Clear</button>
+</div>
+
+<div class="metrics">
+<p><strong>Words:</strong> <span id="words">0</span></p>
+<p><strong>Characters:</strong> <span id="characters">0</span></p>
+<p><strong>Estimated Reading Time:</strong> <span id="readingTime">0 min</span></p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>What These Tools Do</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Word Counter</h3>
+<p>Count words for essays, articles, forms, and writing assignments.</p>
+</div>
+
+<div class="card">
+<h3>Character Counter</h3>
+<p>Check character limits for descriptions, forms, and social posts.</p>
+</div>
+
+<div class="card">
+<h3>Case Converter</h3>
+<p>Convert text into uppercase, lowercase, or title case formatting.</p>
+</div>
+
+<div class="card">
+<h3>Text Cleaner</h3>
+<p>Remove extra spaces and improve pasted text formatting.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Who Can Use These Tools?</h2>
+
+<ul>
+<li>Students</li>
+<li>Writers</li>
+<li>Job seekers</li>
+<li>Website owners</li>
+<li>Everyday computer users</li>
+</ul>
+</section>
+
+<section>
+<h2>About Easy Text Tools</h2>
+
+<p>
+Easy Text Tools was created to provide simple online writing and formatting utilities that are easy to use for beginners and everyday users.
+</p>
+
+<p><em>Last updated: May 2026</em></p>
+</section>
+
+</main>
+
+<footer>
+
+<p>© 2026 Easy Text Tools</p>
+
+<p>
+<a href="/easy-text-tools/">Home</a> |
+<a href="/easy-text-tools/about.html">About</a> |
+<a href="/easy-text-tools/contact.html">Contact</a> |
+<a href="/easy-text-tools/privacy-policy.html">Privacy Policy</a> |
+<a href="/easy-text-tools/terms.html">Terms</a>
+</p>
+
+</footer>
+
+<script>
+const textInput = document.getElementById('textInput');
+
+function updateMetrics(){
+const text = textInput.value;
+const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+const characters = text.length;
+const readingMinutes = words > 0 ? Math.max(1, Math.ceil(words / 200)) : 0;
+
+document.getElementById('words').textContent = words;
+document.getElementById('characters').textContent = characters;
+document.getElementById('readingTime').textContent =
+readingMinutes + (readingMinutes === 1 ? ' min' : ' mins');
+}
+
+function convertCase(type){
+let text = textInput.value;
+
+if(type === 'upper'){
+text = text.toUpperCase();
+}
+
+if(type === 'lower'){
+text = text.toLowerCase();
+}
+
+if(type === 'title'){
+text = text.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+}
+
+textInput.value = text;
+updateMetrics();
+}
+
+function cleanText(){
+textInput.value = textInput.value.replace(/\s+/g, ' ').trim();
+updateMetrics();
+}
+
+function clearText(){
+textInput.value = '';
+updateMetrics();
+}
+
+textInput.addEventListener('input', updateMetrics);
+</script>
+
+</body>
+</html>
